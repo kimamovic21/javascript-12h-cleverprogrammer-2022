@@ -418,5 +418,203 @@ console.log(diffArray(diffNums));*/
 console.log(max([1,2,3,4,5]));*/
 
 
-// 2:31:50
+const letterFrequency = (phrase) => {
+  // letterFrequency('haha') -> {'h':2, 'a':2}
+  console.log(phrase)
+  // make a 'frequency' object {}
+  let frequency = {}
+  for (const letter of phrase) {
+    // check if letter exists in frequency
+    if (letter in frequency) {
+       // increment the value by +1
+     // frequency[letter] = frequency[letter] + 1
+      frequency[letter] += 1;
+    } else {
+      // otherwise, set the value to 1
+      frequency[letter] = 1
+    }
+    // console.log(letter);
+  }
+  return frequency;
+}
+
+//console.log(letterFrequency('haha'));
+//console.log(letterFrequency('Hello, my name is Kerim, I come from Sarajevo'));
+
+
+// wordFrequency ('Kerim Imamovic') -> {'Kerim':1, 'Imamovic':1}
+/*const wordFrequency = (phrase) => {
+  let frequency = {}
+  words = phrase.split(' ');
+  for (const word of words) {
+    console.log(word);
+    if (word in frequency) {
+      frequency[word] += 1
+    } else {
+      frequency[word] = 1
+    }
+  }
+  console.log(words);
+  return frequency;
+}
+
+console.log(wordFrequency('Kerim Imamovic'));*/
+
+
+/*const wordFrequency = (phrase) => {
+  const words = phrase.split(' ')
+  return letterFrequency(words)
+}
+
+//console.log(wordFrequency('I am from Bosnia'));
+const userInput = prompt('Write your sentence');
+console.log(wordFrequency(userInput));*/
+
+// incremental operators
+// ++, --, +=, -=
+
+
+// 08 - Array methods
+// higher order functions
+// map
+// filter
+// reduce
+
+
+// .map() method
+// loops and returns an array
+
+// [1,2,3,4,5].map(number => console.log(number));
+
+/*const myArray = [1,2,3,4,5];
+console.log(myArray);
+
+myArray.map((number) => {
+  console.log(number)
+});*/
+
+/*let result = [1,2,3,4].map(number => number * 2);
+console.log(result);*/
+
+/*const doubleMap = (numbers) => {
+  return numbers.map(number => number * 2)
+}
+console.log(doubleMap([1,2,3]));*/
+
+
+// .filter() method
+// loops and returns an array with matching conditions
+
+/*const filter = (numbers, greaterThan) => {
+  let result = []
+  for (const number of numbers) {
+    if(number > greaterThan) {
+      result.push(number)
+    }
+  }
+  return result;
+}
+console.log(filter([1,2,3,4,5,6], 3));*/
+
+/*const nums = [1,2,3,4,5,6];
+console.log(nums.filter(num => num > 3));*/
+
+/*const nums = [1,2,3,4,5,6];
+console.log(nums.filter(num => num > 4 || num < 2));*/
+
+/* if (userIsAuthenticated && userIsPayingMember){
+  code goes here ( no ads for example)
+} else {
+  show you ads
+}
+*/
+
+const actors = [
+  {name: 'John', netWorth: 90000 },
+  {name: 'Mike', netWorth: 100000},
+  {name: 'George', netWorth: 200000},
+  {name: 'Robert', netWorth: 300000},
+  {name: 'Richard', netWorth: 4000000},
+  {name: 'Liam', netWorth: 500000},
+]
+
+/*console.log(actors);
+console.log(actors.filter(actor => actor.netWorth > 100000));
+const result = actors.filter(actor => actor.netWorth > 1000000);
+let names = result.map(actor => actor.name).join(', ')*/
+
+//playground.innerHTML = `<h1>George</h1>`
+//playground.innerHTML = `<h1>${result[1].name}</h1>`
+//playground.innerHTML = `<h1>${JSON.stringify(result)}</h1>`
+//playground.innerHTML = `<h1>${names}</h1>`
+
+
+// .reduce() method
+// example all of the net worth
+// SUM: think reduce
+// reduce takes in a function as an argument
+// reduce loops and gives you back the accumulator
+
+
+/*const nums = [1,2,3];
+nums.reduce(function(prev,next) {
+  console.log(prev,next)
+})*/
+
+
+/*const nums = [1,2,3];
+const result = nums.reduce(function(prev, curr) {
+  return prev + curr
+})
+console.log(result);*/
+// (1+2)=3 + 3 = 6
+
+/*const nums = [1,2,3];
+const result = nums.reduce((prev,curr) => prev + curr);
+console.log(result); */
+
+/*const sum = (a,b) => {
+  return a + b;
+}
+const nums = [1,2,3,4];
+const result = nums.reduce(sum);
+console.log(result);*/
+
+/*const mul = (a,b) => {
+  return a * b;
+}
+const nums = [1,2,3,4];
+const result = nums.reduce(mul);
+console.log(result);*/
+
+
+/*const sum = (a,b) => {
+  return a + b
+}
+
+const mul = (a,b) => {
+  return a * b
+}
+
+const nums = [1,2,3,4];
+
+const result = nums.reduce((a,b) => a + b)
+const result2 = nums.reduce((a,b) => a * b)
+
+console.log(result);
+console.log(result2);*/
+
+
+// Using the .reduce() method, create a function that sums up all the net worths of celebrities
+
+/*const sumWorth = actors.reduce((prev, curr) => prev + curr.netWorth, 0)
+console.log(sumWorth);*/
+
+// 09 DOM Manipulation
+
+// 03:42:33 video
+
+
+
+
 
