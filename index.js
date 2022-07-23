@@ -418,7 +418,7 @@ console.log(diffArray(diffNums));*/
 console.log(max([1,2,3,4,5]));*/
 
 
-const letterFrequency = (phrase) => {
+/*const letterFrequency = (phrase) => {
   // letterFrequency('haha') -> {'h':2, 'a':2}
   console.log(phrase)
   // make a 'frequency' object {}
@@ -437,6 +437,7 @@ const letterFrequency = (phrase) => {
   }
   return frequency;
 }
+*/
 
 //console.log(letterFrequency('haha'));
 //console.log(letterFrequency('Hello, my name is Kerim, I come from Sarajevo'));
@@ -610,9 +611,63 @@ console.log(result2);*/
 /*const sumWorth = actors.reduce((prev, curr) => prev + curr.netWorth, 0)
 console.log(sumWorth);*/
 
+
 // 09 DOM Manipulation
 
-// 03:42:33 video
+//otvaramo i uredujemo replit DOM manipulation
+
+
+// select a random element from an array
+/*const randomFruit = (fruits) => {
+
+  const randomNumber = Math.floor(Math.random() * fruits.length);
+  console.log(randomNumber);
+  return fruits[randomNumber];
+}
+
+let fruits = ['banana', 'apple', 'orange', 'pear'];
+console.log(randomFruit(fruits));*/
+
+
+
+// if else if else
+// rainy, sunny, overcast
+/*const weatherScore = (weather) => {
+  let score;
+  if (weather === 'rainy') {
+    score = 1
+  } 
+  else if (weather === 'sunny') {
+    score = -1
+  }
+  else {
+    score = 0
+  }
+  return score
+}
+
+console.log(weatherScore('rainy'));*/
+
+
+/*const weatherScore = (weather, weather2) => {
+  let score;
+  if (weather == 'rainy' && weather2 == 'overcast') {
+    score = 2;
+  } 
+  else if (weather == 'rainy') {
+    score = 1;
+  }
+  else if (weather == 'sunny') {
+    score = -1;
+  }
+  else {
+    score = 0;
+  }
+  return score;
+}
+
+console.log(weatherScore('rainy', 'overcast'));*/
+
 
 
 
